@@ -60,12 +60,13 @@ public class Main {
                 System.out.println("El menor de los números es: " + menor);
                 System.out.println("El rango de los números es: " + rango);
                 }
-                }
 
-            }
-
-
-            }
+            case 10:
+                Ejercicio10.main(args);
+                break;
+        }
+    }
+}
 
 
 
