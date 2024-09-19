@@ -28,18 +28,14 @@ public class Main {
                 }
                 break;
             case 3:
-                System.out.println("Ingrese el tamaño del array");
-                int tamaño = scanner.nextInt();
-                int[] array2 = new int[tamaño];
+                System.out.println("Ingrese el tamaño del array:");
+                int tamanio = scanner.nextInt();
+                int[] array2 = new int[tamanio];
                 System.out.println("Ingrese el número cuyos múltiplos se almacenarán en el array");
                 int numero = scanner.nextInt();
-                for (int i = 0; i < array2.length; i++) {
-                    array2[i] = numero * (i + 1);
-                    System.out.println("Los valores del nuevo array son: Elemento: " + i + ": " + array2[i]);
-                    scanner.close();
-                }
+                MetodosEjercicio3.rellenarArrayconMultiplosDe(numero, array2);
+                MetodosEjercicio3.mostrarArray(array2);
                 break;
-
             case 4:
                 double[] numeros = new double[20];
                 System.out.println("Ingrese 20 números decimales");
