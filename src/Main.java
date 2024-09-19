@@ -6,8 +6,6 @@ public class Main {
         System.out.println("Trabajo práctico Nº 3 - Grupo 6");
         System.out.println("Por favor, ingrese el número del ejercicio que desee verificar");
         int num;
-        String cadena = "";
-
         num = scanner.nextInt();
         switch (num) {
             case 1:
@@ -60,7 +58,7 @@ public class Main {
                 break;
             case 5:
                 int i;
-                double promedios = 0;
+                double promedios;
                 int suma = 0;
                 int contador1 = 0;
                 int contador2 = 0;
@@ -77,7 +75,7 @@ public class Main {
                 for (i = 0; i < numerosPares.length; i++) {
                     suma = suma + numerosPares[i];
                 }
-                promedios = (suma / numerosPares.length);
+                promedios = ((double) suma / numerosPares.length);
                 System.out.println(promedios);
                 for (i = 0; i < numerosPares.length; i++) {
                     if (numerosPares[i] == promedios) {
