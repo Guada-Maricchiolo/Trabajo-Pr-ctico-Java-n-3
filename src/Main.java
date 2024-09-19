@@ -166,20 +166,21 @@ public class Main {
 
             case 9:
                 System.out.print("Ingrese una cadena de números separados por guiones: ");
+                scanner.nextLine();
                 String input = scanner.nextLine();
 
                 String[] numerosStr = input.split("-");
 
-                int suma = 0;
+                int suma1 = 0;
                 int conteo = numerosStr.length;
 
-                for (int i = 0; i < conteo; i++) {
-                    suma += Integer.parseInt(numerosStr[i]);
+                for (i = 0; i < conteo; i++) {
+                    suma1 += Integer.parseInt(numerosStr[i]);
                 }
-                double promedio = (double) suma / conteo;
+                double promedio = (double) suma1 / conteo;
 
 
-                System.out.println("Suma total: " + suma);
+                System.out.println("Suma total: " + suma1);
                 System.out.println("Promedio: " + promedio);
                 break;
 
