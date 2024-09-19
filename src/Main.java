@@ -1,8 +1,3 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-
-import javax.management.StringValueExp;
-import java.nio.channels.ScatteringByteChannel;
 import java.util.Scanner;
 
 public class Main {
@@ -17,20 +12,19 @@ public class Main {
         switch (num) {
             case 1:
                 System.out.println("EJERCICIO Nº1");
-                System.out.println("Qué sucede si tratamos de acceder un elemento fuera del tamaño del array?");
+                System.out.println("¿Qué sucede si tratamos de acceder un elemento fuera del tamaño del array?");
                 System.out.println("Si intentamos acceder a un elemento fuera del tamaño de un array, se lanzará una excepción llamada ArrayIndexOutOfBoundsException. Esta excepción se produce cuando el índice utilizado para acceder a un elemento del array es menor que 0 o mayor o igual que la longitud del array.");
                 break;
-
             case 2:
                 int[] array = new int[5];
-                array[0] = 20;
-                array[1] = 40;
-                array[2] = 60;
-                array[3] = 80;
-                array[4] = 100;
+                System.out.println("Ingrese 5 valores numéricos enteros");
+                for (int i = 0; i < array.length; i++) {
+                    System.out.println("Ingrese el valor nro. " + (i + 1) + ": ");
+                    array[i] = scanner.nextInt();
+                }
                 System.out.println("Los valores del Array son: ");
                 for (int i = 0; i < array.length; i++) {
-                    System.out.println("Elemento " + i + ": " + array[i]);
+                    System.out.println("Elemento " + (i + 1) + ": " + array[i]);
                 }
                 break;
             case 3:
