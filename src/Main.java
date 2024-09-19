@@ -163,7 +163,6 @@ public class Main {
                 System.out.println("Array en orden ascendente: " + MetodosEjercicio8.arrayToString(ascendente));
                 System.out.println("Array en orden descendente: " + MetodosEjercicio8.arrayToString(descendente));
                 break;
-
             case 9:
                 System.out.print("Ingrese una cadena de números separados por guiones: ");
                 scanner.nextLine();
@@ -183,18 +182,15 @@ public class Main {
                 System.out.println("Suma total: " + suma1);
                 System.out.println("Promedio: " + promedio);
                 break;
-
-
             case 10:
                 Ejercicio10.main(args);
                 break;
-
-
+            case 11:
+                Ejercicio11.main(args);
+                break;
+            case 12:
+                Ejercicio12.main(args);
+                break;
         }
     }
 }
-
-
-
-
-

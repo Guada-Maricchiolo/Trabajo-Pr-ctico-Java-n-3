@@ -6,12 +6,12 @@ public class Ejercicio12 {
         Scanner sc = new Scanner(System.in);
 
         int [] numeros3 = new int[10];
-        System.out.println("Ingrese lo valores del arreglo");
+        System.out.println("Ingrese los valores del arreglo:");
         for (int i = 0; i < numeros3.length; i++){
             numeros3[i] = sc.nextInt();
         }
 
-        System.out.println("Ingrese el numero a buscar");
+        System.out.println("Ingrese el número a buscar:");
         int numeroIngresado = sc.nextInt();
         boolean encontrado = false;
         int vecesEncontrado = 0;
@@ -25,7 +25,7 @@ public class Ejercicio12 {
         }
         int [] resultado2 = new int[10-vecesEncontrado];
         if (encontrado){
-            System.out.println("Numero encontrado: " + numeroIngresado);
+            System.out.println("Número encontrado: " + numeroIngresado);
             for (int i = 0; i < numeros3.length; i++){
                 if (numeros3[i] != numeroIngresado){
                     resultado2[contador] = numeros3[i];
@@ -33,7 +33,7 @@ public class Ejercicio12 {
                 }
             }
         } else {
-            System.out.println("No se encontro el numero");
+            System.out.println("No se encontró el número");
         }
         if (encontrado){
             System.out.println("NUEVO ARREGLO");
