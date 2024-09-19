@@ -164,9 +164,31 @@ public class Main {
                 System.out.println("Array en orden descendente: " + MetodosEjercicio8.arrayToString(descendente));
                 break;
 
+            case 9:
+                System.out.print("Ingrese una cadena de números separados por guiones: ");
+                String input = scanner.nextLine();
+
+                String[] numerosStr = input.split("-");
+
+                int suma = 0;
+                int conteo = numerosStr.length;
+
+                for (int i = 0; i < conteo; i++) {
+                    suma += Integer.parseInt(numerosStr[i]);
+                }
+                double promedio = (double) suma / conteo;
+
+
+                System.out.println("Suma total: " + suma);
+                System.out.println("Promedio: " + promedio);
+                break;
+
+
             case 10:
                 Ejercicio10.main(args);
                 break;
+
+
         }
     }
 }
