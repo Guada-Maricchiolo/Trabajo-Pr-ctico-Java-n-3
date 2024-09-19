@@ -42,19 +42,21 @@ public class Main {
                 for (int i = 0; i < numeros.length; i++) {
                     System.out.println("Numero " + (i + 1) + ": ");
                     numeros[i] = scanner.nextDouble();
-                    double mayor = numeros[0];
-                    double menor = numeros[0];
+                }
+                double mayor = numeros[0];
+                double menor = numeros[0];
+                for (int i = 1; i < numeros.length; i++) {
                     if (numeros[i] > mayor) {
                         mayor = numeros[i];
                     }
                     if (numeros[i] < menor) {
                         menor = numeros[i];
                     }
-                    double rango = mayor - menor;
-                    System.out.println("El mayor de los números es: " + mayor);
-                    System.out.println("El menor de los números es: " + menor);
-                    System.out.println("El rango de los números es: " + rango);
                 }
+                double rango = mayor - menor;
+                System.out.println("El mayor de los números es: " + mayor);
+                System.out.println("El menor de los números es: " + menor);
+                System.out.println("El rango de los números es: " + rango);
                 break;
             case 5:
                 int i;
